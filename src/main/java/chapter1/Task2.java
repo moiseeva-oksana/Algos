@@ -2,13 +2,15 @@ package chapter1;
 
 import java.util.Arrays;
 
+import static chapter1.Utill.isEmpty;
+
 /**
  * Created by Oksana_Moiseeva on 12/4/2017.
  */
 //10 minutes
 class Task2 {
     boolean isReplaced(String str1, String str2) {
-        if (str1 == null || str2 == null) {
+        if (isEmpty(str1) || isEmpty(str2)) {
             return false;
         }
         if(str1.length()!=str2.length()) {
