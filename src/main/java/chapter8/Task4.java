@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-
+//1.5h
 public class Task4 {
     Set<Set<Integer>> subSet(Set<Integer> original) {
         Set<Set<Integer>> result = new HashSet<>();
