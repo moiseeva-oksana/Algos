@@ -3,6 +3,7 @@ package chapter10;
 import java.util.Collections;
 import java.util.List;
 
+//30min
 public class Task3 {
     public int search(List<Integer> list, int element) {
         int index = 0;
