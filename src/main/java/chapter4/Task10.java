@@ -2,6 +2,10 @@ package chapter4;
 
 public class Task10 {
     private boolean result;
+    //1.5h
+    public boolean isSubtree(Tree tree1, Tree tree2) {
+        return isSubTree(tree1.getRoot(), tree2.getRoot());
+    }
 
     private boolean isSubTree(Tree.Node node, Tree.Node sub) {
         if (result) return true;
@@ -15,12 +19,8 @@ public class Task10 {
         return result;
     }
 
-    public boolean isSubtree(Tree tree1, Tree tree2) {
-        return isSubTree(tree1.getRoot(), tree2.getRoot());
-    }
 
-
-    public boolean compareNodes(Tree.Node node1, Tree.Node node2) {
+    private boolean compareNodes(Tree.Node node1, Tree.Node node2) {
         boolean result = true;
         if (node1.getEntity() != node2.getEntity()) {
             return false;
