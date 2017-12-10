@@ -7,6 +7,9 @@ package chapter2;
 public class LinkList<T> {
     private Node<T> head;
 
+    public LinkList() {
+    }
+
     public LinkList(T data) {
         this.head = new Node<>(data);
     }
@@ -17,6 +20,10 @@ public class LinkList<T> {
 
     public void addToTail(T data) {
         Node<T> newNode = new Node<>(data);
+        if(head == null) {
+            this.head = newNode;
+            return;
+        }
         Node current = head;
         while (current.next!= null) {
             current = current.next;
@@ -24,6 +31,7 @@ public class LinkList<T> {
         current.next = newNode;
 
     }
+
 
     public void remove(T data) {
         Node current = head;
