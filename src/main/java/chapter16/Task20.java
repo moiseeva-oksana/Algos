@@ -3,7 +3,6 @@ package chapter16;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -36,7 +35,6 @@ public class Task20 {
 
     public List<String> getWords(String input) {
         List<String> result = new CopyOnWriteArrayList<>(dictionary); //CopyOnWriteArrayList to avoid ConcurrentModificationException
-        Collections.copy(result, dictionary);
         for (int i = 0; i < input.length(); i++) {
             char ch = input.charAt(i);
             for (String word : result) {
