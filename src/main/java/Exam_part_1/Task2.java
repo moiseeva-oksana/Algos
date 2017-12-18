@@ -5,28 +5,29 @@ import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
 
+//sum O(n) = n!
 public class Task2 {
 
     public static void main(String[] args) {
         System.out.println(new Task2().allPairs());
     }
 
+    //0(n) ~ n
     public List<Pair> allPairs() {
         List<Pair> result = new ArrayList<>();
         Set<Integer> permutations = new TreeSet<>();
-        permutations("","12345678", permutations);
-        System.out.println(permutations.size());
-        ArrayList<Integer> list = new ArrayList<>(permutations);
-        for (int divider: list) {
-            for (int element : list) {
-                if(element!=divider && element%divider == 0) {
-                    result.add(new Pair(divider, element));
+        permutations("","123456789", permutations);
+        for (Integer element : permutations) {
+            for (int i = 2; i < 10 ; i++) {
+                int res = element * i;
+                if(permutations.contains(res)) {
+                    result.add(new Pair(element, res));
                 }
             }
         }
         return result;
     }
-
+    //O(n) = n!
     private Set<Integer> permutations(String prefix, String str, Set<Integer> result) {
         if(str.length() == 0) {
             result.add(Integer.valueOf(prefix));

@@ -3,6 +3,7 @@ package Exam_part_1;
 import java.util.HashMap;
 
 public class Task1 {
+    //O(n) = n
     public  boolean isFibonacci(String str, int bound) {
         HashMap<Integer, Integer> hash = new HashMap<>();
         fibonacci(bound, hash);
@@ -13,7 +14,7 @@ public class Task1 {
         String fib = values.toString();
         return fib.contains(str);
     }
-
+    //O(n) = n
     private int fibonacci(int n, HashMap<Integer, Integer> memoized) {
         if (memoized.containsKey(n)) {
             return memoized.get(n);
