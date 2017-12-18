@@ -1,6 +1,6 @@
 package chapter1;
 
-import static chapter1.Utill.isEmpty;
+import static chapter1.Util.isEmpty;
 
 
 /**

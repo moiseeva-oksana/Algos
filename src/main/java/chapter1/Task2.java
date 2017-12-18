@@ -2,7 +2,7 @@ package chapter1;
 
 import java.util.Arrays;
 
-import static chapter1.Utill.isEmpty;
+import static chapter1.Util.isEmpty;
 
 /**
  * Created by Oksana_Moiseeva on 12/4/2017.

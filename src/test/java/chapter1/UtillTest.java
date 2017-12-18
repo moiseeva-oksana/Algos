@@ -9,8 +9,8 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class UtillTest {
     @Test
     public void isCharReplaced() {
-        assertThat(Utill.isEmpty(""), is(true));
-        assertThat(Utill.isEmpty(null), is(true));
-        assertThat(Utill.isEmpty("test"), is(false));
+        assertThat(Util.isEmpty(""), is(true));
+        assertThat(Util.isEmpty(null), is(true));
+        assertThat(Util.isEmpty("test"), is(false));
     }
 }
