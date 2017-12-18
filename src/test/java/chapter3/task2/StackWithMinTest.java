@@ -20,7 +20,6 @@ public class StackWithMinTest {
         stack.push(8);
         assertThat(stack.getMin(), is(-7));
         assertThat(stack.pop(), is(8));
-        System.out.println(stack.peekFirst());
     }
 
 }
