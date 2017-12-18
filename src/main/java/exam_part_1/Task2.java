@@ -1,4 +1,4 @@
-package Exam_part_1;
+package exam_part_1;
 
 import java.util.ArrayList;
 import java.util.List;
